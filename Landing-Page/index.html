@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanta Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="images/logo1.png" width="150px" height="100px" class="logo"></a>
+                <ul>
+                    <li><a href="#">Home</a></li> 
+                    <li><a href="#">Menu</a></li>  
+                    <li><a href="#">Contact</a></li>                
+                </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Don't look for Soda<br> Get<span> Fanta</span></h2>
+                <p>The cool sweetness of sugar and orange flavor give you a feeling 
+                    of lightness<br> 
+                    refreshment when enjoying. 
+                    Fanta orange flavored carbonated beverage is<br> a refreshing
+                     drink that helps supplement vitamins and
+                      minerals that are good for the body.</p>
+                      <a href="#">Explore</a>
+                      </div>
+                      <div class="imgBox">
+                        <img src="images/PIC.png" class="Fanta">
+                    </div>
+                </div>
+                <ul class="thumb">
+                    <li><img src="images/top.png" width="180px" height="180px" onclick="imgSlider('images/top.png'); changeCircleColor('#ff4500') " ></li>
+                    <li><img src="images/top2.png" width="180px" height="180px" onclick="imgSlider('images/top2.png'); changeCircleColor('#CAEC06')" ></li>
+                    <li><img src="images/pic6.png" width="180px" height="180px" onclick="imgSlider('images/pic6.png'); changeCircleColor('#ff0000') "></li>
+                </ul>
+                <div class="socials">
+                    <ul>
+                    <li><i class="fab fa-tiktok"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Fanta').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+
+        }
+    </script>
+</body>
+</html>
