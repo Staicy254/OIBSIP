@@ -21,8 +21,14 @@
                 </div>
             </div>
             <h2 class="title">Temperature Converter</h2>
+            <!-- New element to display the converted temperature -->
+            <div class="converted-temp">
+                <span class="converted-heading">Converted Temperature</span>
+                <h2 class="converted-value" id="converted">1</h2>
+            </div>
+            <!-- Rest of your HTML -->
             <div class="result">
-                <span class="result-heading">Result(Celsius)</span>
+                <span class="result-heading">Result (Celsius)</span>
                 <h2 class="celsius-value" id="celsius">1</h2>
             </div>
 
@@ -35,7 +41,7 @@
                 <div class="temp-field">
                     <label for="temp-type">Type</label>
                     <select name="temperature" id="temp-type" autocomplete="on">
-                        <option value="farenheit" id="farenheit">Farenheit</option>
+                        <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
                         <option value="kelvin" id="kelvin">Kelvin</option>
                     </select>
                 </div>
